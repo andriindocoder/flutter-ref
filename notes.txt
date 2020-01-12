@@ -1,0 +1,16 @@
+Flutter
+	One Codebase to Rule Them All, easy to maintain
+	Hummingbird : Dart Web
+	Hot Reload
+	Widget Tree
+		Scaffold
+			AppBar	Container
+		Flutter = Lego Technic
+	https://github.com/londonappbrewery/Flutter-Course-Resources
+	Appearance Languages and Frameworks
+		Save hot reload
+		Save format code
+	Appearance Keymap
+	Menu Flutter Outline di Kanan
+	Menu Flutter Inspector di Kanan
+	Diagnose using tab di menu kanan
