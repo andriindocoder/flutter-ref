@@ -9,15 +9,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.red,
-          title: Text('Demo'),
-        ),
-        backgroundColor: Colors.white,
-        body: Container(),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
-          child: Icon(Icons.add),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Container(
+            height: 100.0,
+            width: 100.0,
+            margin: EdgeInsets.only(left: 15.0),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.white,
+            child: Text('Hello'),
+          ),
         ),
       ),
     );
