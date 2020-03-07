@@ -8,10 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.amber,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -36,50 +38,47 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                color: Colors.black,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+62 819 336 177 07',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0),
-                    )
-                  ],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.grey.shade700,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              Card(
                 color: Colors.black,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.language,
-                      color: Colors.white,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'https://andriwicaksono.com',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'SourceSansPro',
-                          fontSize: 20.0),
-                    )
-                  ],
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    '+62 819 336 177 07',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.black,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.language,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    'https://andriwicaksono.com',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'SourceSansPro',
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
             ],
